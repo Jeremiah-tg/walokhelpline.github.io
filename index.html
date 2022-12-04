@@ -7,53 +7,179 @@
     <meta name="keywords" content="Walokhelpline, Walok, Mental Health, Uganda Mental Health, Miah, Jeremiah Joseph, UICT, Youth and Diction, Roence">
     <!-- Styling of bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Walok</title>
+    <style>
+      /* Change color on hover */
+.navbar a:hover {
+  color: #ddd;
+  
+}
+.topnav {
+  overflow: hidden;
+  background-color: #12558A;
+  position:fixed;
+  width: 100%;
+  margin: 0%;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #12558A;
+}
+
+.topnav a.active {
+  background-color: #D9D9D9;
+  color: #12558A;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav li{
+  display: block;
+  text-decoration: none;
+}
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: DodgerBlue;
+        text-align: center;
+      }
+      
+      /* .flex-container > div {
+        display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+
+        
+      } */
+      .flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+      @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+      @media (max-width: 800px) {
+  .flex-container,.navbar{
+    flex-direction: column;
+  }
+ .flex-item-left > img{
+  src: url('img/bigsingle.svg');
+  width:min-content;
+  width: 100%;
+ }
+ flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+ /* .navbar{
+  display: flex;
+  flex-direction: column;
+ } */
+}
+      </style>
+
 </head>
 <body style="background-color: #12558A;">
-    <nav class="navbar navbar-expand bg-light navbar-light sticky-top ">
-        <div style="margin-left: 1%; margin-right: 1%; font-size: 20px;" class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Walokhelpline</a>
-          <div style="font-size: 20px;">
+  
 
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link" style="color: #12558A;" href="#">+ Learn</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #12558A;" href="#">+ Get Help</a>
-              </li>                                     
-              <li class="nav-item">
-                <a class="nav-link" style="color: #12558A;" href="#">+ Share</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #12558A;" href="#">+ Explore Topics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #12558A;" href="#">+ Volunteer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #12558A;" href="#">+ Donate</a>
-              </li>
-              <li class="nav-item">
-                <button style="background-color:#12558A; font-size: 20px;" class="btn btn-primary" type="button">Reach a counselor</button>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+      <div class="topnav" class="navbar navbar-expand bg-light navbar-light sticky-top" id="myTopnav">
+  
+      
+        
+       
+       
+        <a href="#about">+ Donate</a>
+        <a href="#about">+ Volunteer</a>
+        <a href="#about">+ Explore Topics</a>
+        <a href="#contact">+ Share</a>
+        <a href="#news">+ Get Help</a>
+        <a href="#home">+ Learn</a>
+        <a href="#home" class="active">Home</a>
+        <a style="float: left;" href="Walok"><h3>Walokhelpline</h3></a>
+        <!-- <button style="background-color:#12558A; font-size: 27px;align-content: center;" class="btn btn-primary" type="button">Reach a counselor</button> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
 <!--     Option 1: Bootstrap Bundle with Popper -->
 <!-- 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+<div class="flex-container">
+  <div  class="flex-item-left" style="float: right;"> <img src="img/double.svg"/></div>
+<!-- <div class="flex-item-right" style="float: left; padding: 5%; text-align: center;"> -->
+  <!-- <h1 style="padding-bottom: 3%;">You deserve a welcoming, loving community.</h1>
+<h5>And so do the people you care about. Here you can reach out to a counselor if you're struggling, find answers and information,
+   and get the tools you need to help someone else.</h5>
+<p style="margin-top: 5%;">Get the health answers you need from people who live it every day</p> -->
+<!-- </div> -->
+</div>
 
-<p>You are never alone, we are here for you!</p>
+<div class="flex-container">
+  <div class="flex-item-left">
+     <h1 style="padding-bottom: 3%;">You deserve a welcoming, loving community.</h1>
+<h5>And so do the people you care about. Here you can reach out to a counselor if you're struggling, find answers and information,
+   and get the tools you need to help someone else.</h5>
+<p style="margin-top: 5%;">Get the health answers you need from people who live it every day</p>
+
+  </div>
+  <div class="flex-item-right">2</div>
+</div>
 
 
-
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 <!-- combine best option here -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
@@ -65,89 +191,99 @@
       <div class="me-5 d-none d-lg-block">
         <span>Get connected with us on social networks:</span>
       </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
     </section>
     <!-- Section: Social media -->
-  
     <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-6">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
               <i class="fas fa-gem me-3"></i>Walok-helpline
             </h6>
-            <p>
+            <p style="text-align: justify;">
+              A self-improvement project with a focus on Personal Productivity, 
+              Motivation & Self Education. The goal is to create an environment of mutual support, 
+              where people can meet from all across the globe to solve problems related to anxiety, depression, negative thinking, stress, moodiness &
+              other mental illness.
+              Get the health answers you need from people who live it every day
                 We’re dedicated to sharing stories about mental health,
-                and every purchase of a print issue supports our mission to offer our digital magazine for free, so anyone who needs it has access.
+               having available all together so anyone who needs it has access.
             </p>
           </div>
           <!-- Grid column -->
   
           <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-decoration: none;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              About Us
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Our Mission</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Career & Volunteer</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Stories</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Blog</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Privacy Policy</a>
+            </p>
+            <!-- <p>
+              <a href="">Elizabeth Ruth Apio </a>
+            </p> -->
+          </div>
+          <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Work With Us
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angular</a>
+              <a href="#!" class="text-reset">Submit your story</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
+              <a href="#!" class="text-reset">Partner with us</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="#!" class="text-reset">Advertise with us</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="#!" class="text-reset">Donate</a>
+            </p>
+            <p>
+              <a href="" class="text-reset">Donor Confidentiality</a>
             </p>
           </div>
-          <!-- Grid column -->
   
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
+              Remedy Health Sites
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="#!" class="text-reset">EndocrineWeb</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
+              <a href="#!" class="text-reset">Patient Power</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Orders</a>
+              <a href="#!" class="text-reset">TheBody</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Help</a>
+              <a href="#!" class="text-reset">SpineUniverse</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">HealthCentral</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -173,8 +309,9 @@
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
        &copy; 2020 - <script>document.write(new Date().getFullYear())</script>
+        Walokhelpline org. All rights reserved.  &nbsp; Follow us on: <a href="">Youtube </a>  | <a href="">Twitter</a> | <a href="">Facebook</a> | <a href="">Podcast.</a> &nbsp; Write to us
+        on <a href="">Gmail</a>.
 
-       
     </div>
     <!-- Copyright -->
   </footer>
