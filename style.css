@@ -23,8 +23,9 @@
       }
       
       .topnav a:hover {
-        background-color: rgb(148, 147, 147);
+        background-color: #4fc3dc44;
         color: #D9D9D9;
+        border-radius: 5% 5% 40% 100%;
       }
       
       .topnav a.active {
@@ -50,8 +51,9 @@
          
             .flex-item-left {
         background-color: #f1f1f1;
-        padding: 10px;
+        padding: 0px;
         flex: 50%;
+        /* border-radius: 5% 5% 40% 100%; */
       }
       
       .flex-item-right {
@@ -64,6 +66,9 @@
         .topnav a.icon {
           float: right;
           display: block;
+        }
+        .topnav a:hover {
+          border-radius: 5% 5% 10% 10%;
         }
       
         
@@ -100,6 +105,9 @@
           border-bottom: #D9D9D9 solid 1px;
           color: #D9D9D9;
         }
+        .topnav a:hover {
+          border-radius: 5% 5% 10% 10%;
+        }
       }
       *{
         box-sizing: border-box;
@@ -111,7 +119,9 @@
                 margin-top: 35%;
                 /* align-items: center; */
               }
-           
+              .topnav a:hover {
+                border-radius: 5% 5% 10% 10%;
+              }
 
         .flex-container,.navbar{
           flex-direction: column;
