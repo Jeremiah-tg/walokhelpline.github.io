@@ -8,11 +8,12 @@
         background-color: transparent;
         position:fixed;
         width: 100%;
-        margin: 0%;
+        height: 50%;
+        margin:0%;
         z-index: 1;
       }
       
-      .topnav a {
+      .topnav a{
         float: right;
         display: block;
         color: #f2f2f2;
@@ -20,13 +21,22 @@
         padding: 14px 16px;
         text-decoration: none;
         font-size: 19px;
+             
       }
-      
       .topnav a:hover {
+        /* background-color: #4fc3dc44; */
         background-color: #4fc3dc44;
+        z-index: 1;
+        box-shadow: 0 0 10px #4fc3dc44,
+        0 0 20px #4fc3dc44,
+        0 0 40px #4fc3dc44,
+        0 0 80px #4fc3dc44,
+        0 0 100px #4fc3dc44; 
+        transition: 0.25s; 
         color: #D9D9D9;
-        border-radius: 5% 5% 40% 100%;
-      }
+        border-radius: 5%;
+
+      } 
       
       .topnav a.active {
         background-color: transparent;
