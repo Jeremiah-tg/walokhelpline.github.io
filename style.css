@@ -21,8 +21,9 @@
         padding: 14px 16px;
         text-decoration: none;
         font-size: 19px;
-             
       }
+
+   
       .topnav a:hover {
         /* background-color: #4fc3dc44; */
         background-color: #4fc3dc44;
@@ -35,9 +36,10 @@
         transition: 0.25s; 
         color: #D9D9D9;
         border-radius: 5%;
-
       } 
       
+
+
       .topnav a.active {
         background-color: transparent;
         color: #D9D9D9;
@@ -70,6 +72,19 @@
         background-color: dodgerblue;
         padding: 10px;
         flex: 50%;
+      }
+
+      .flex-container2{
+        display:flex;
+        background-color: transparent;
+      }
+      .flex-container2 > div{
+        background-color: #4fc3dc;
+        margin: 1%;
+        padding: 1%;
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
       }
             @media screen and (max-width: 600px) {
         .topnav a:not(:first-child) {display: none;}
