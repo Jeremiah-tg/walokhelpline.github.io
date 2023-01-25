@@ -12,7 +12,7 @@
     <!-- javascript for the mobileview -->
    
 </head>
-<body>
+<body id="bdy">
     <div class="topnav" id="myTopnav" style="background-color: transparent;color: #D9D9D9;">
         <!-- <a href=""></a> -->
         <a style="visibility: collapse;" href="#"></a>
@@ -245,8 +245,20 @@
   <!-- <p class="free24"> Free 24/7 support at your very fingertips.</p> -->
 
 <div class="buttons" style="width: 100%;">
-  <a href="Walokhelpline.html"><button class="button" id="btn1" style="vertical-align:middle"><span>Text Us </span></button></a>
-  <button class="button" style="vertical-align:middle" id="btn2"><span>Call Us </span></button>
+<button class="button" type="submit" id="btn1" onclick="openPopup()" style="vertical-align:middle"><span>Text Us </span></button>
+    <!-- The POpup dialogue box -->
+    <div class="popup" id="popup">
+      <img src="img/tick.png">
+      <h2>In crisis and need to talk to someone?</h2>
+      <p>We’re here for you.
+      Text WALOK to 0800212121 to reach a volunteer Crisis Counselor.</p>
+      <p style="font-size:9px;">Message frequency varies. Message & data rates may apply. <span style="color:red;"><a href="#">Terms of Service & Privacy Policy.</a></span></p>
+      <button type="submit" class="btn" onclick="webChat()">Web Chat</button>
+      <button type="submit" class="btn" onclick="opensms()"> SMS Chat</button>
+      <button type="submit" style=" width:40%; background-color: rgba(197, 13, 13, 0.651);" class="btn" onclick="closePopup()"> Cancel</button>
+        </div>
+     <!-- <button class="button" type="submit" id="btn" onclick="openPopup()" style="vertical-align:middle"><span>Call Us </span></button> -->
+<button type="submit" class="button" onclick="openhone()" style="vertical-align:middle;" id="btn2"><span> Call Us</span></button>
 </div>
 
 
@@ -254,7 +266,6 @@
   <!-- <button type="button" class="btn btn-success" style="width: 6cm;">Message on WhatsApp</button> -->
 </div>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sunt non eos minus natus fugiat cupiditate inventore minima praesentium illo alias placeat, earum reiciendis dignissimos molestias veniam debitis? Optio, et.</p>
 
 
 
@@ -267,6 +278,30 @@
         x.className = "topnav";
       }
     }
+    // Scripts for the popup of messaging
+let popup =  document.getElementById("popup");
+ 
+ function openPopup(){
+ popup.classList.add("open-popup");
+  }
+
+ function webChat(){
+ popup.classList.remove("open-popup");
+ location.href="https://mail.google.com/chat/u/0/#chat/dm/jTH94kAAAAE";
+  }
+  
+  function opensms(){
+  popup.classList.remove("open-popup");
+  location.href="sms:256788931578";
+  }
+
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+
+  function openhone(){
+    location.href="phone:256788931578";
+  }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
