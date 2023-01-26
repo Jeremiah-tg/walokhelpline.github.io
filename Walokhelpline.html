@@ -28,8 +28,8 @@
         <a href="#">+ Get Help</a>
         <!-- https://walokhelpline.blogspot.com/ -->
         
-        <a href="index.html">Home</a>
-        <a style="float: left;  border-radius: 3%;" href="index.html"><h3>Walokhelpline</h3></a>
+        <a style="color: #ddd; cursor: pointer;" onclick="home()">Home</a>
+        <a style="float: left;  border-radius: 3%; cursor: pointer; color: #ddd;" onclick="home()"><h3>Walokhelpline</h3></a>
         <!-- <button style="background-color:#12558A; font-size: 27px;align-content: center;" class="btn btn-primary" type="button">Reach a counselor</button> -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -52,29 +52,34 @@
 <div class="flex-container">
   <div class="flex-item-left">
      <h1 style="padding-bottom: 0%; padding: 5%; color: #12558A; font-size: 40px;">You deserve a welcoming and loving community.</h1>
-<p style="padding: 0% 5% 5% 5%; text-align: justify; font-size: large;">And so do the people you care about. Here you can reach out to a counselor if you're struggling, find answers and information,
+<p style="padding: 0% 5% 5% 5%; text-align: justify; font-size: larger;">And so do the people you care about. Here you can reach out to a counselor if you're struggling, find answers and information,
    and get the tools you need to help someone else.</p>
 
 
   </div>
   <div class="flex-item-right">
     <div class="flex-container2">
-      <div><h3>Anxiety</h3></div>
-      <div><h3>depression</h3></div>
-      <div><h3>Suicide</h3></div>
-      <div><h3>Coronavirus</h3></div>
+      <div onclick="openAnxiety()"><p>Anxiety</p></div>
+      <div onclick="openDepression()"><p>depression</p></div>
+      <div onclick="openSuicide()"><p>Suicide</p></div>
+      <div onclick="openLonliness()"><p>Lonliness</p></div>
     </div>
     <div class="flex-container2">
-      <div><p>Self Harm</p></div>
-      <div><p>Addiction</p></div>
-      <div><p>Gambling</p></div>
-      <div><p>Biplar </p></div>
+      <div onclick="openSelfharm()"><p>Self Harm</p></div>
+      <div onclick="openAddiction()"><p>Addiction</p></div>
+      <div onclick="openGambling()"><p>Gambling</p></div>
+      <div onclick="openBiplar()"><p>Biplar </p></div>
     </div>
     <div class="flex-container2">
-      <div><p>Trauma</p></div>
-      <div><p>ADHD</p></div>
-      <div><p>Insomnia</p></div>
-      <div><p>PTSD</p></div>
+      <div onclick="openTrama()"><p>Trauma</p></div>
+      <div onclick="openAdhd()"><p>ADHD</p></div>
+      <div onclick="openIsomnia()"><p>Insomnia</p></div>
+      <div onclick="openPtsd"><p>PTSD</p></div>
+    </div>
+    <div class="flex-container2">
+      <div onclick="openEatingdisorder()"><p>Eating Disorder</p></div>
+      <div onclick="openEmotionalabuse()"><p>Emotional Abuse</p></div>
+      <div onclick="openCovid()"><p>Corona Virus Effect</p></div>
     </div>
     <!-- <div class="flex-container2">
       <div>1</div>
@@ -101,6 +106,7 @@
   </script> -->
   <!--End of Tawk.to Script-->
 <script>
+  
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -108,6 +114,13 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+// Linking the pages with functions
+function home(){
+  location.href="index.html";
+}
+function openAnxiety(){
+  location.href="#";
 }
 </script>
 <!-- combine best option here -->
@@ -201,23 +214,23 @@ function myFunction() {
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Remedy Health Sites
+            Other Links
             </h6>
             <p>
-              <a href="#!" class="text-reset">EndocrineWeb</a>
+              <a href="https://www.health.go.ug/" target="_blank" class="text-reset">Ministry of Health</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Patient Power</a>
+              <a href="https://ubts.go.ug/" target="_blank" class="text-reset">Uganda Blood Transfusion Services</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">TheBody</a>
+              <a href="https://opm.go.ug/" target="_blank" class="text-reset">The Office of Prime Minister</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">SpineUniverse</a>
+              <a href="https://www.parliament.go.ug/" class="text-reset">Parliament of Uganda</a>
             </p>
-            <p>
+            <!-- <p>
               <a href="#!" class="text-reset">HealthCentral</a>
-            </p>
+            </p> -->
           </div>
           <!-- Grid column -->
   

@@ -23,8 +23,8 @@
         <!-- <a href="index.html">+ Share</a> -->
         <a href="#">+ Learn</a>
         <a href="#news">+ Get Help</a>
-        <a href="Walokhelpline.html">Home</a>
-        <a style="float: left; border-radius: 3%;" href="#"><h3>Walokhelpline</h3></a>
+        <a style="color: #ddd; cursor: pointer;" onclick="homepage()">Home</a>
+        <a style="float: left; border-radius: 3%; cursor: pointer;" onclick="home()"><h3>Walokhelpline</h3></a>
         <!-- <button style="background-color:#12558A; font-size: 27px;align-content: center;" class="btn btn-primary" type="button">Reach a counselor</button> -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -253,9 +253,9 @@
       <p>We’re here for you.
       Text WALOK to 0800212121 to reach a volunteer Crisis Counselor.</p>
       <p style="font-size:9px;">Message frequency varies. Message & data rates may apply. <span style="color:red;"><a href="#">Terms of Service & Privacy Policy.</a></span></p>
-      <button type="submit" class="btn" onclick="webChat()">Web Chat</button>
+      <button type="submit" class="btn"  onclick="webChat()">Web Chat</button>
       <button type="submit" class="btn" onclick="opensms()"> SMS Chat</button>
-      <button type="submit" style=" width:40%; background-color: rgba(197, 13, 13, 0.651);" class="btn" onclick="closePopup()"> Cancel</button>
+      <button type="submit" style="" class="bt" id="cbtn" onclick="closePopup()"> Cancel</button>
         </div>
      <!-- <button class="button" type="submit" id="btn" onclick="openPopup()" style="vertical-align:middle"><span>Call Us </span></button> -->
 <button type="submit" class="button" onclick="openhone()" style="vertical-align:middle;" id="btn2"><span> Call Us</span></button>
@@ -292,11 +292,19 @@
         x.className = "topnav";
       }
     }
+
+    function homepage(){
+      location.href="Walokhelpline.html";
+    }
     // Scripts for the popup of messaging
 let popup =  document.getElementById("popup");
- 
+let body = document.getElementById("bdy");
  function openPopup(){
  popup.classList.add("open-popup");
+ popup.style.pointerEvents="auto";    //This makes the item clickable
+ body.style.opacity="0.9";
+ popup.style.opacity="1";
+ body.style.pointerEvents="none"; //This enables unclickable in a piece of code
   }
 
  function webChat(){
@@ -313,6 +321,8 @@ let popup =  document.getElementById("popup");
 
   function closePopup(){
     popup.classList.remove("open-popup");
+    body.style.opacity="1";
+    body.style.pointerEvents="auto";
   }
 
   function openhone(){
