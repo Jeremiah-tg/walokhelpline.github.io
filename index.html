@@ -253,9 +253,9 @@
       <p>We’re here for you.
       Text WALOK to 0800212121 to reach a volunteer Crisis Counselor.</p>
       <p style="font-size:9px;">Message frequency varies. Message & data rates may apply. <span style="color:red;"><a href="#">Terms of Service & Privacy Policy.</a></span></p>
-      <button type="submit" class="btn"  onclick="webChat()">Web Chat</button>
+      <button type="submit" class="btn" onclick="webChat()">Web Chat</button>
       <button type="submit" class="btn" onclick="opensms()"> SMS Chat</button>
-      <button type="submit" style="" class="bt" id="cbtn" onclick="closePopup()"> Cancel</button>
+      <button type="submit" class="bt" id="cbtn" onclick="closePopup()"> Cancel</button>
         </div>
      <!-- <button class="button" type="submit" id="btn" onclick="openPopup()" style="vertical-align:middle"><span>Call Us </span></button> -->
 <button type="submit" class="button" onclick="openhone()" style="vertical-align:middle;" id="btn2"><span> Call Us</span></button>
@@ -269,7 +269,7 @@
 
 <!--Start of Tawk.to Script-->
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -279,7 +279,7 @@
   s1.setAttribute('crossorigin','*');
   s0.parentNode.insertBefore(s1,s0);
   })();
-  </script>
+  </script> -->
   <!--End of Tawk.to Script-->
   <!--End of Tawk.to Script-->
 
@@ -309,8 +309,9 @@ let body = document.getElementById("bdy");
 
  function webChat(){
  popup.classList.remove("open-popup");
-//  location.href="https://mail.google.com/chat/u/0/#chat/dm/jTH94kAAAAE";
-    location.href="https://tawk.to/chat/63d1499ec2f1ac1e202f8ed3/1gnkof51e";
+//  location.href="https://mail.google.com/chat/u/0/#chat/dm/jTH94kAAAAE"; //-Failed google chat idea
+    // location.href="https://tawk.to/chat/63d1499ec2f1ac1e202f8ed3/1gnkof51e";
+    window.open('https://tawk.to/chat/63d1499ec2f1ac1e202f8ed3/1gnkof51e','_blank');
     // https://tawk.to/chat/63d1499ec2f1ac1e202f8ed3/1gnkof51e
   }
   
