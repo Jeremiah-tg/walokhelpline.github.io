@@ -115,14 +115,15 @@
       .popup{
 width:60%;
 background:#fff;
+height:auto;
 border-radius:6px;
 position:absolute;
 top:0%;
 left:50%;
 transform:translate(-50%,-50%) scale(0.1);
 text-align:center;
-   padding-bottom: 10%;
-   padding:0 30px 30px;
+   /* padding-bottom: 10%; */
+   padding:0% 6% 0% 6%;
    padding-bottom: 4%;
 color:#333;
 visibility:hidden;
@@ -132,7 +133,6 @@ transition: transform 0.4s, top 0.4s;
 .open-popup{
 visibility:visible;
 top:50%;
-
 transform: translate(-50%,-50%) scale(1);
 }
 .close-popup{
@@ -149,14 +149,14 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
  .popup h2{
- font-size:35px auto;
+ font-size:240% auto;
  font-weight:500;
  margin:30px 0 10px;
  }
    .popup >.btn{
    width:70%;
    height: fit-content;
-   margin-top:4%;
+   margin-top:2%;
    padding: 10px 0;
    color:#12558A;
    background:#fff;
@@ -177,7 +177,9 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
     border-radius: 4px;
    }
    #cbtn{
-    margin-top:4%;
+    margin-top:2%;
+    width: 100%;
+    height: fit-content;
     padding: 10px 0;
     font-size:18px;
     border-radius:4px;
