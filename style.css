@@ -320,6 +320,16 @@ body{
   font-size: larger;
   color: orange;
 }
+.h1crisis a{
+  font-size: larger;
+  text-decoration-line:none ;
+  color: orange;
+}
+.h1crisis a:hover{
+  font-size: larger;
+  text-decoration-line:none ;
+  color: orange;
+}
 /* .free24{
   font-family: mon;
  color: orange;
