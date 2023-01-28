@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/img/favi.ico" type="image/x-icon">
+    <title>Get Help</title>
+    <!-- <link rel="stylesheet" href="features.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#4fc3dc;">
+<!-- Nav Bar -->
+<div class="topnav" id="myTopnav" style="height:9%;color: #D9D9D9;background-image: url(img/navBarbg.svg);">
+    <!-- <a href=""></a> -->
+    <a style="visibility: collapse;" href="#"></a>
+    <a onclick="donatePage()">DONATE </a>
+    <a target="_blank" href="https://walokhelpline.blogspot.com/"> Blog</a>
+    <a onclick="volunteer()">+ Volunteer</a>
+    <a onclick="explore()">+ Explore Topics</a>
+    <!-- <a href="index.html">+ Share</a> -->
+    <a onclick="learn()">+ Learn</a>
+    <a href="#">+ Get Help</a>
+    <a style="color: #ddd; cursor: pointer;" onclick="homepage()">Home</a>
+    <a style="float: left; border-radius: 3%; cursor: pointer;" onclick="home()"><h3>Walokhelpline</h3></a>
+    <!-- <button style="background-color:#12558A; font-size: 27px;align-content: center;" class="btn btn-primary" type="button">Reach a counselor</button> -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<!-- Nav Bar ending -->
+
+<!-- Sections -->
+
+<!-- Sectins ends -->
+<script>
+        function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    function homepage(){
+        location.href="Walokhelpline.html";
+    }
+    function learn(){
+        location.href="learn.html"; }
+        function donatePage(){
+            location.href="donate.html"; }
+            function volunteer(){
+                location.href="volunteer.html";  }
+                function explore(){
+                    location.href="explore.html";   }
+
+ </script>   
+</body>
+</html>
