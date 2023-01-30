@@ -202,6 +202,9 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
           float: right;
           display: block;
         }
+        .topnav{
+          background-color: transparent;
+        }
         .topnav a:hover {
           border-radius: 5% 5% 10% 10%;
         }
@@ -217,6 +220,9 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
           top: 0;
           /* background-color: transparent; */
           z-index: 3;
+        }
+        .topnav{
+          background-color: transparent;
         }
         .incrisiwd{
           width: 100%;
@@ -253,6 +259,7 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
                 width: 100%;
                 padding-top: 15%;
                 margin-top: 35%;
+                
                 /* align-items: center; */
               }
               .topnav a:hover {
