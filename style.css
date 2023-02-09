@@ -1,22 +1,23 @@
      /* Change color on hover */
      .navbar a:hover {
-        color: #ddd;
+        color: #12558A;
         
       }
       .topnav {
-        overflow: hidden;
-        background-color: transparent;
+        /* overflow: hidden; */
+        /* background-color: transparent; */
         position:fixed;
         width: 100%;
-        height: 20%;
+        height: 20% auto;
         margin:0%;
+        color: #12558A;
         z-index: 1;
       }
       
       .topnav a{
         float: right;
         display: block;
-        color: #f2f2f2;
+        /* color: #f2f2f2; */
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -34,7 +35,7 @@
         0 0 80px #4fc3dc44,
         0 0 100px #4fc3dc44; 
         transition: 0.25s; 
-        color: #D9D9D9;
+        /* color: #D9D9D9; */
         border-radius: 5%;
       } 
       
@@ -42,7 +43,7 @@
 
       .topnav a.active {
         background-color: transparent;
-        color: #D9D9D9;
+        /* color: #D9D9D9; */
       }
       
       .topnav .icon {
@@ -202,15 +203,21 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
           float: right;
           display: block;
         }
+        .incrisiwd{
+          /* margin-top: -95%; */
+          margin-top: 55%;
+        }
         .topnav{
           background-color: transparent;
         }
         .topnav a:hover {
           border-radius: 5% 5% 10% 10%;
         }
-      
-        
+        .gcontainer{
+          padding-top: 20%;
+        }
       }
+      
       
       @media screen and (max-width: 600px) {
         .topnav.responsive {position: relative;}
@@ -221,11 +228,27 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
           /* background-color: transparent; */
           z-index: 3;
         }
+        .gcontainer{
+          padding-top: 20%;
+        }
+        /* Swiper */
+        .swiper-slide{
+          display: block;
+          width: 90%;
+        }
+        .swiper{
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .swiper-slide center >h3{
+          font-size: small;
+        }
         .topnav{
           background-color: transparent;
         }
         .incrisiwd{
           width: 100%;
+          margin-top: 55%;
           /* align-items: center; */
         }
         .incrisiwd > h1{
@@ -243,7 +266,7 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
           display: block;
           text-align: left;
           font-size: small;
-          background-color: #12558A;
+          background-color: aliceblue;
           border-bottom: #D9D9D9 solid 1px;
           color: #D9D9D9;
         }
@@ -255,13 +278,30 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
         box-sizing: border-box;
       }
             @media (max-width: 800px) {
-              .incrisiwd{
+              /* .incrisiwd{
                 width: 100%;
                 padding-top: 15%;
-                margin-top: 35%;
+                margin-top: 55%;
                 
-                /* align-items: center; */
+                /* align-items: center; 
               }
+            */
+            /* Swiper */
+            .swiper-slide{
+              display: block;
+              width: 90%;
+            }
+            .swiper{
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+            .swiper-slide center >h3{
+              font-size: small;
+            }
+
+            .gcontainer{
+              padding-top: 20%;
+            }
               .topnav a:hover {
                 border-radius: 5% 5% 10% 10%;
               }
@@ -312,7 +352,7 @@ body{
   display: block;
   background: transparent;
   height: 70vh;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 .incrisiwd >h1{
   font-weight: 700;
@@ -379,14 +419,14 @@ body{
   transition: 0.5s;
 }
 
-.button span:after {
-  content: '\00bb';
+/* .button span:after {
+  /* content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
-  /* transition: 0.5s; */
-}
+  right: -20px; */
+  /* transition: 0.5s; 
+} */
 
 .button:hover span {
   padding-right: 25px auto;
