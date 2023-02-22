@@ -221,7 +221,7 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
         }
         .gcontainer{
           padding-top: 20%;
-        }
+        } 
       }
       
       
@@ -297,9 +297,12 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2);
                 /* align-items: center; 
               }
             */
-
+              #myTopnavindex{
+                background-color: #12558A;
+              }
             .topnav {
              height: 7%;
+            
              }
             /* Swiper */
             #titlelogo{
