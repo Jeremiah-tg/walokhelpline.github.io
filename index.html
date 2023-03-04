@@ -27,13 +27,13 @@
     <div class="topnav" id="myTopnav" style="background-color: transparent;color: #D9D9D9;">
         <!-- <a href=""></a> -->
         <a style="visibility: collapse;" href="#"></a>
-        <a style="color: rgb(144, 189, 202);" href="#">DONATE </a>
+        <a style="color: rgb(144, 189, 202);" onclick="donatePage()">DONATE </a>
         <a style="color: rgb(44, 189, 202);" target="_blank" href="https://walokhelpline.blogspot.com/"> Blog</a>
-        <a style="color: rgb(44, 189, 202);" href="#">+ Volunteer</a>
-        <a style="color: rgb(44, 189, 202);" href="#">+ Explore </a>
+        <a style="color: rgb(44, 189, 202);" onclick="volunteer()">+ Volunteer</a>
+        <a style="color: rgb(44, 189, 202);" onclick="explore()">+ Explore </a>
         <!-- <a href="index.html">+ Share</a> -->
         <a style="color: rgb(44, 189, 202);" href="learn.html">+ Learn</a>
-        <a style="color: rgb(44, 189, 202);" href="gethelp.html">+ Get Help</a>
+        <a style="color: rgb(44, 189, 202);"onclick="gethelp()">+ Get Help</a>
         <a style="color: rgb(44, 189, 202); cursor: pointer;" onclick="homepage()">Home</a>
         <a style="float: left; border-radius: 3%; cursor: pointer;" onclick="home()"><h3>Walokhelpline</h3></a>
         <!-- <button style="background-color:#12558A; font-size: 27px;align-content: center;" class="btn btn-primary" type="button">Reach a counselor</button> -->
@@ -297,6 +297,16 @@
     function homepage(){
       location.href="Walokhelpline.html";
     }
+   function gethelp(){
+    location.href="gethelp.html"; }
+    function donatePage(){
+        location.href="donate.html"; }
+        function volunteer(){
+            location.href="volunteer.html";  }
+            function explore(){
+                location.href="explore.html";   }
+                function learn(){
+                location.href="learn.html";   }
     // Scripts for the popup of messaging
 let popup =  document.getElementById("popup");
 let body = document.getElementById("bdy");
@@ -321,7 +331,7 @@ let body = document.getElementById("bdy");
   
   function opensms(){
   popup.classList.remove("open-popup");
-  location.href="sms:256788931578";
+  location.href="sms:256788931578?&body=Walok";
   }
 
   function closePopup(){

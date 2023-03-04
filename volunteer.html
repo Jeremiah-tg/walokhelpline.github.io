@@ -10,6 +10,54 @@
     <title>Walok Helpline-Volunteer</title>
     <!-- <link rel="stylesheet" href="features.css"> -->
     <link rel="stylesheet" href="style.css">
+    <style>
+.gtp{
+  display: flexbox; 
+  width:50%; 
+  grid-template-rows: 0fr;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  background-color: transparent;
+}
+.grid-container{
+visibility:hidden;
+height: 0%;
+/* position: absolute; */
+}
+.grove{
+
+}
+
+@media screen and (max-width: 885px){
+.gtp{
+  width: 95%;
+}
+p{
+  color: #12558a;
+}
+#logotxt{
+  visibility: collapse;
+}
+.topnav{
+  height: auto;
+}
+.gcontent{
+  display:block;
+}
+.grove{
+  visibility: collapse;
+}
+.grid-container{
+  margin-top: -19%;
+  visibility: visible;
+}
+.grid-item >img{
+  width:90%;
+  padding-bottom: 1%;
+}
+}
+    </style>
 </head>
 <body style="background-color:#FFFFFF;">
 <!-- Nav Bar -->
@@ -24,7 +72,7 @@
     <a style="color: #12558a;" onclick="learn()">+ Learn</a>
     <a style="color: #12558a;" onclick="gethelp()">+ Get Help</a>
     <a style="color: #12558a; cursor: pointer;" onclick="homepage()">Home</a>
-    <a style="float: left; border-radius: 3%; cursor: pointer;" onclick="home()"><h3>Walokhelpline</h3></a>
+    <a style="float: left; border-radius: 3%; cursor: pointer;" id="logotxt" onclick="home()"><h3>Walokhelpline</h3></a>
     <!-- <button style="background-color:#12558A; font-size: 27px;align-content: center;" class="btn btn-primary" type="button">Reach a counselor</button> -->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -32,8 +80,30 @@
   </div>
 <!-- Nav Bar ending -->
     <!-- Nav Bar ending -->
-    <center><h2 style="margin: 0%; padding: 20%;">404!</h2>
-      <p>Page under maintance. We will get it on soon.</p></center>
+    <center>
+      <div class="gtp">
+        <h1 style="padding-top: 1%;">-<span style="font-weight: 100;">-</span></h1> 
+        <hr style="width: 85%; float: right; text-align: center;">
+        <h2 style="padding-right:15%; padding-left: 15%; justify-content: center; text-align: justify; width: 100%;font-weight: 200;">
+      <span style="font-weight: 700;"> Become A Volunteer</span> </h2>
+      <p style="text-align: justify; padding-top: 05%; font-weight: 800;">Crisis has no borders. There are millions of people struggling all over the world and millions in Uganda. And we want to help all of them. Everyone deserves free, 24/7, mental health support at their fingertips. WALOK is here to fill the GAP</p>
+      <p style="text-align: justify;  font-weight: 300;">Walok-helpline is powered by volunteer Crisis Counselors who work remotely — anywhere with a computer and secure internet connection works.</p>
+      <p style="text-align: justify; font-weight: 300;">We accept applications for volunteers in the region. If you’d like to become a volunteer from any part of the country, and want to volunteer, please complete the form below and we will contact you when the application is ready.</p>
+        <p style="text-align: justify; font-weight: 300;">Crisis Counselors commit to 100 total hours of volunteering, serving a recommended 2 hours per week to meet this requirement. Before you begin as a Crisis Counselor, you’ll also complete a training period to give you all of the expertise you need to successfully and empathetically navigate crisis intervention.</p>
+          <p style="text-align: justify; font-weight: 300;">If you’re interested in volunteering, please fill out this form and someone from your team will be in touch shortly.</p>
+      </div>
+      <img class="grove" src="img/grove.png" style="width: 90%;" alt="We all" >
+
+      <div class="grid-container">
+        <!-- <div class="flex-container2"> -->
+          <div class="grid-item" ><img src="img/mhone.png"/></div>
+          <div class="grid-item" ><img src="img/mhtwo.png"/></div>
+          <div class="grid-item" ><img src="img/mhthree.png"/></div>
+          <div class="grid-item" ><img src="img/mhfour.png"/></div>
+          <div class="grid-item" ><img src="img/mhfiv.png"/></div>
+        <!-- </div> -->
+      </div>
+        </center>
 <!-- Js Script -->
 <!-- Sectins ends -->
 <script>
