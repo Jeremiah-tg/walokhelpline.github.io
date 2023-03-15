@@ -11,8 +11,18 @@
     <!-- <link rel="stylesheet" href="features.css"> -->
     <link rel="stylesheet" href="style.css">
     <style>
- @media screen and (max-width: 885px){
-
+ @media screen and (max-width: 885px)  and (orientation: landscape){
+  #voyant1{
+    background-image: url("img/depression_mobile.png");
+    image-orientation: 90deg;
+  } 
+}
+  @media screen and (max-width: 885px)  and (orientation: portrait){
+  #voyant1{
+    background-image: url("img/depression2.png");
+    image-orientation: -90deg;
+  }
+  
   
  }
     </style>
@@ -47,8 +57,8 @@
   you should add an explicit protocol (https if you're using voyant-tools.org, otherwise
   it depends on this server.
   Feel free to change the height and width values or other styling below: -->
-  <iframe id="voyant1" style='width: 80%; height: 800px; margin-top: 5%; background-image: url(img/depression2.png);' src='https://voyant-tools.org/tool/Cirrus/?visible=345&corpus=1785315c3906f33e35ce27d1247d345f'></iframe></center>
-
+  <iframe id="voyant1" style='width: 80%; height: 800px; margin-top: 5%;' src='https://voyant-tools.org/tool/Cirrus/?visible=345&corpus=1785315c3906f33e35ce27d1247d345f'></iframe></center>
+<!-- background-image: url(img/depression2.png);' -->
 
   <!-- TextArc -->
   <!--	Exported from Voyant Tools (voyant-tools.org).
